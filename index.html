@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pianda Hub - Home Tutoring & Digital Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <h2><span>Pianda</span> Hub</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tutoring">Home Tutoring</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#query">Inquire Now</a></li>
+            </ul>
+        </nav>
+        <a href="#query" class="btn-primary">Get Started</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your One-Stop Solution for <br><span>Quality Education & Digital Services</span></h1>
+            <p>Expert Home Tutors in English, Maths, Physics,Computer Science Biology and Manipuri — plus hassle-free PAN card, travel bookings, and job applications under one roof.</p>
+            <div class="hero-buttons">
+                <a href="#tutoring" class="btn-primary">Find a Tutor</a>
+                <a href="#services" class="btn-secondary">Explore Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home Tutoring Section -->
+    <section id="tutoring" class="tutoring-section">
+        <div class="section-title">
+            <h2>Expert Home Tutoring</h2>
+            <p>Personalized 1-on-1 offline and online guidance for academic excellence.</p>
+        </div>
+        <div class="subjects-grid">
+            <div class="subject-card">
+                <i class="fa-solid fa-book-open"></i>
+                <h3>English</h3>
+                <p>Grammar, literature, spoken English, and writing skills enhancement for all grades.</p>
+            </div>
+            <div class="subject-card">
+                <i class="fa-solid fa-calculator"></i>
+                <h3>Mathematics</h3>
+                <p>Algebra, Geometry, Calculus, and problem-solving techniques simplified.</p>
+            </div>
+            <div class="subject-card">
+                <i class="fa-solid fa-atom"></i>
+                <h3>Physics</h3>
+                <p>Conceptual clarity, numerical problem solving, and practical physics applications.</p>
+            </div>
+            <div class="subject-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Computer Science</h3>
+                <p>Programming (C, C++, Java, Python), Web Development, and IT fundamentals.</p>
+            </div>
+            <div class="subject-card">
+                <i class="fa-solid fa-dna"></i>
+                <h3>Biology</h3>
+                <p>Botany, Zoology, Human Anatomy, Cell Biology, and diagram-based learning.</p>
+            </div>
+            <div class="subject-card">
+                <i class="fa-solid fa-language"></i>
+                <h3>Manipuri</h3>
+                <p>Grammar, literature, Meitei Mayek script writing, and regional curriculum support.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Essential Digital Services Section -->
+    <section id="services" class="services-section">
+        <div class="section-title">
+            <h2>Our Digital & Travel Services</h2>
+            <p>Fast, reliable, and convenient assistance for all your daily utility needs.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h3>Job Application Assistance</h3>
+                <p>Guidance and online submission support for private and government job openings.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-address-card"></i>
+                <h3>PAN Card Assistance</h3>
+                <p>Apply for a new PAN card, corrections, or re-issuance without hassle.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-plane-departure"></i>
+                <h3>Flight Ticketing</h3>
+                <p>Domestic and international flight bookings at competitive prices.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-train"></i>
+                <h3>Train Ticket Booking</h3>
+                <p>Instant IRCTC train ticket reservation and confirmation status tracking.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-bus"></i>
+                <h3>Bus Booking</h3>
+                <p>Comfortable sleeper and AC bus seat reservations across multiple routes.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-ellipsis"></i>
+                <h3>And More Services</h3>
+                <p>Utility bill payments, online form filling, passport application support, and generic online assistance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Query Form Section -->
+    <section id="query" class="query-section">
+        <div class="query-container">
+            <div class="query-info">
+                <h2>Have Questions? <br><span>Send Us a Query</span></h2>
+                <p>Fill out the form below to request a home tutor or ask about any of our digital services. Our team will get back to you shortly.</p>
+                <div class="contact-details">
+                    <p><i class="fa-solid fa-envelope"></i> hello.piandahub@gmail.com </p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7005332976</p>
+                    <p><i class="fa-solid fa-location-dot"></i>Phayeng Mayai Leikei, Imphal-West Manipur-795146 </p>
+                </div>
+            </div>
+            
+            <form class="query-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out! Pianda Hub will contact you shortly.');">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter mobile number" required>
+                </div>
+                <div class="input-group">
+                    <label for="service-type">Service Required</label>
+                    <select id="service-type" required>
+                        <option value="" disabled selected>Select a Service</option>
+                        <optgroup label="Home Tutoring">
+                            <option value="tutor-english">Home Tutor - English</option>
+                            <option value="tutor-math">Home Tutor - Mathematics</option>
+                            <option value="tutor-physics">Home Tutor - Physics</option>
+                            <option value="tutor-cs">Home Tutor - Computer Science</option>
+                            <option value="tutor-man">Home Tutor - Manipuri</option>
+                            <option value="tutor-bio">Home Tutor - Biology</option>
+                        </optgroup>
+                        <optgroup label="Digital Services">
+                            <option value="job-apply">Job Application Support</option>
+                            <option value="pancard">PAN Card Apply / Correction</option>
+                            <option value="flight">Flight Ticket Booking</option>
+                            <option value="train">Train Ticket Booking</option>
+                            <option value="bus">Bus Ticket Booking</option>
+                            <option value="other">Other Inquiry</option>
+                        </optgroup>
+                        <optgroup label="E-seva Manipur"> 
+                            <option value="Caste">Caste certificate (SC/ST/OBC) </option>
+                            <option value="Domicile">Domicile certificate</option>
+                            <option value="Permanent">Permanent Resident Certificate</option>
+                             <option value="other">Other Inquiry</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="message">Your Message / Requirements</label>
+                    <textarea id="message" rows="4" placeholder="Mention class, location, or details about the service required..." required></textarea>
+                </div>
+                <button type="submit" class="btn-primary btn-block">Submit Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Pianda Hub. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
